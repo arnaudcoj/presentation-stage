@@ -247,15 +247,15 @@
 	    <h3>mm</h3>
 	    <p>Mois (ex. : 06)</p>
 	  </section>
+	  
+	  <section>
+	    <h3>DD</h3>
+	    <p>Jour (ex. : 12)</p>
+	  </section>
 
 	  <section>
 	    <h3>T</h3>
 	    <p>Séparateur</p>
-	  </section>
-
-	  <section>
-	    <h3>DD</h3>
-	    <p>Jour (ex. : 12)</p>
 	  </section>
 
 	  <section>
@@ -406,7 +406,7 @@
 	  </section>
 
 	  <section>
-	    <h3>Gestion du projet</h3>
+	    <h3>Gestion de projet</h3>
 	    <ul>
 	      <li>Git</li>
 	      <li>Maven</li>
@@ -427,7 +427,7 @@
 	</section>
 	
 	<section>
-	  <h2>Ancienne algorithme</h2>
+	  <h2>Ancien algorithme</h2>
 	  
 	  <section>
 	    <h3>Compteurs simplement ajoutés dans la base de données en "non-compressé".</h3>
@@ -454,31 +454,42 @@
 	</section>
 	
 	<section>
-	  <h1>Nouvelle version de l'algorithme</h1>
+	  <h1>Nouvel algorithme</h1>
 
 	  <section>
-	    <h2>Plusieurs versions</h2>
+	    <h3>Plusieurs versions</h3>
 	  </section>
 	  
 	  <section>
-	    <h2>Chaque version, nouvelle problématique</h2>
+	    <h3>Chaque version, nouvelle problématique</h3>
 	  </section>
 	  
 	</section>
 
 	<section>
 	  <h2>Première Version</h2>
-	  <!-- img & pbtq-->
+	  <img width="70%" src="images/fig02.svg" />
+	  <h3>Trop basique, pas de compression</h3>
 	</section>
 
 	<section>
 	  <h2>Compression</h2>
-	  <!-- img & pbtq -->
+	  <img width="70%" src="images/fig03.svg" />
 	</section>
 
 	<section>
+	  <img width="70%" src="images/fig04.svg" />
+	  <h3>Conflit quand 2 threads updatent la même ligne</h3>
+	</section>
+	
+	<section>
 	  <h2>Actions</h2>
-	  <!-- img & pbtq -->
+	  <img width="45%" src="images/fig05.svg" />
+	</section>
+
+	<section>
+	  <img width="45%" src="images/fig06.svg" />
+	  <h3></h3>
 	</section>
 
 	<section>
@@ -487,17 +498,23 @@
 
 	<section>
 	  <h2>"Crash-proof"</h2>
-	  <!-- img & pbtq -->
+	  <img width="50%" src="images/fig07.svg" />
+	  <h3>Fonctionne de façon sécurisée, mais plutôt lent.</h3>
 	</section>
 
 	<section>
 	  <h2>Version Finale</h2>
-	  <!-- img & pbtq -->
+	  <img width="70%" src="images/fig08.svg" />
 	</section>
 	
 	<section>
 	  <h2>Ajout de l'index en base de données</h2>
-	  <!-- script creation index -->
+	    <code>
+	      CREATE INDEX MONITORING ON
+	      STATISTICS_COUNTERS (STATISTICS_OEM_ID, STATISTICS_OWNER_ID,
+	      STATISTICS_USER_ID, STATISTICS_DOMAIN_ID, STATISTICS_COMPRESSION_TYPE,
+	      STATISTICS_DATE, STATISTICS_STREAM_TYPE);
+	    </code>
 	</section>
 	
 	<section>
@@ -518,6 +535,10 @@
 	  <section>
 	    <h3>Déploiement</h3>
 	    <p>Rapports de statistiques inaccessibles !</p>
+	  </section>
+
+	  <section>
+	    <img width="70%" src="images/stats.png" />
 	  </section>
 	  
 	</section>
@@ -547,7 +568,8 @@
 	</section>
 
 	<section>
-	  <h1>It's working, it's working !</h1>
+	  <h1>It works !</h1>
+	  <img src="images/its_working.gif" />
 	  <h3>Le programme peut passer en phase de Qualifications.</h3>
 	</section>
 	
@@ -557,14 +579,23 @@
 
 	<section>
 	  <h2>Script Bash</h2>
+	  <h3>Génération de fichiers de d'enregistrements pour tester</h3>
+	  <p>Fonctionne, mais trop lent.</p>
 	</section>
 	
 	<section>
 	  <h2>Script Python</h2>
+	  <h3>Idem que pour le script Bash</h3>
+	  <ul>
+	    <li>Plus rapide ;</li>
+	    <li>Option d'attente ;</li>
+	    <li>Fichiers trop génériques.</li>
+	  </ul>
 	</section>
 	
 	<section>
 	  <h2>Script Perl</h2>
+	  <h3>Copie de fichiers déjà existants avec modification de date</h3>
 	</section>
 
 	<section>
@@ -591,7 +622,7 @@
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-      controls: true,
+      controls: false,
       progress: true,
       history: true,
       center: true,
@@ -608,6 +639,15 @@
       { src: 'plugin/notes/notes.js', async: true }
       ]
       });
+      
+      window.addEventListener("mousedown", handleClick, false);
+      window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+      
+      function handleClick(e) {
+      e.preventDefault();
+      if(e.button === 0) Reveal.next(); 
+      if(e.button === 2) Reveal.prev(); 
+      }
 
     </script>
 
