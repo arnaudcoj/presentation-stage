@@ -208,26 +208,28 @@
 	  <h3>YYYY-mm-DD-HHMM-monitoring.log</h3>
 
 	  <section>
-	  </section>
-	  
-	  <section>
 	    <h3>YYYY</h3>
+	    <p>Année (ex. : 2015)</p>
 	  </section>
 
 	  <section>
 	    <h3>mm</h3>
+	    <p>Mois (ex. : 06)</p>
 	  </section>
 
 	  <section>
 	    <h3>DD</h3>
+	    <p>Jour (ex. : 12)</p>
 	  </section>
 
 	  <section>
 	    <h3>HH</h3>
+	    <p>Heure (ex. : 13)</p>
 	  </section>
 
 	  <section>
 	    <h3>MM</h3>
+	    <p>Minute (ex. : 37)</p>
 	  </section>
 
 	</section>
@@ -235,63 +237,77 @@
 	<section>
 	  <h2>Lignes dans ces fichiers</h2>
 	  <p>YYYY-mm-DDTHH:MM:SS+GMT mtaXX : [xxxxxxxx] [d:domaine.fr]:t=1234567890,cpt1=val1,...cptN=valN</p>
-	  
+
 	  <section>
 	    <h3>YYYY</h3>
+	    <p>Année (ex. : 2015)</p>
 	  </section>
 
 	  <section>
 	    <h3>mm</h3>
-	  </section>
-
-	  <section>
-	    <h3>DD</h3>
+	    <p>Mois (ex. : 06)</p>
 	  </section>
 
 	  <section>
 	    <h3>T</h3>
+	    <p>Séparateur</p>
+	  </section>
+
+	  <section>
+	    <h3>DD</h3>
+	    <p>Jour (ex. : 12)</p>
 	  </section>
 
 	  <section>
 	    <h3>HH</h3>
+	    <p>Heure (ex. : 13)</p>
 	  </section>
 
 	  <section>
 	    <h3>MM</h3>
+	    <p>Minute (ex. : 37)</p>
 	  </section>
 
 	  <section>
 	    <h3>SS</h3>
+	    <p>Secondes (ex. : 12)</p>
 	  </section>
 
 	  <section>
 	    <h3>GMT</h3>
+	    <p>Décalage horaire (ex. : 02:00)</p>
 	  </section>
 
 	  <section>
 	    <h3>mtaXX</h3>
+	    <p>Gestionnaire d'envoi de mails (ex. : mta06)</p>
 	  </section>
 
 	  <section>
 	    <h3>[xxxxxxxx]</h3>
+	    <p>Identifiant de processus (ex. : 00000000)</p>
 	  </section>
 
 	  <section>
 	    <h3>[d:domaine.fr]</h3>
+	    <p>Nom de domaine (ex. : [d:choco.la])</p>
 	  </section>
 
 	  <section>
 	    <h3>t=1234567890</h3>
+	    <p>Timestamp - date d'enregistrement (ex. : 1434116232)</p>
+	    <p><small>équivaut à : ven. 12 juin 2015 15:37:12 CEST GMT+2:00 DST</small></p>
 	  </section>
 
 	  <section>
 	    <h3>cpt1=val1,...</h3>
+	    <p>Compteur et valeur (reject=1,virus=2,rcptto=0/0/1)</p>
 	  </section>
 	  
 	</section>
 
 	<section>
-	  <h2>Certaines lignes différentes</h2>
+	  <h2>Certaines lignes sont différentes</h2>
 
 	  <section>
 	    <p>2015-03-30T10:36:01+02:00 mta02 : [00000000] alive</p>
@@ -303,8 +319,76 @@
 	</section>
 
 	<section>
-	  <h2>Compteurs</h2>
+	  <h2>Certains compteurs aussi</h2>
+	  <section>
+	  <ul>
+	    <li>rcptto=0/0/1</li>
+	    <li>spf=0/2</li>
+	    <li>etc.</li>
+	  </ul>
+	  </section>
+
+	  <section>
+	    <h3>Convertis en compteurs simples</h3>
+	    <p>(ex. : rcpttox5=1, spfx2=2, etc.)
+	  </section>
+	</section>
+
+	<section>
+	  <h2>Base de données VRC</h2>
+
+	  <section>
+	    <h3>DOMAIN</h3>
+	  </section>
+
+	  <section>
+	    <h3>HOME_SUMMARY</h3>
+	  </section>
 	  
+	  <section>
+	    <h3>STATISTICS_COUNTERS</h3>
+	  </section>
+	</section>
+
+	<section>
+	  <h2>7 types de compression</h2>
+	  <h3>Représentés par des entiers</h3>
+	  
+	  <section>
+	    <h3>0 = 1 minute</h3>
+	    <p>(pas de compression)</p>
+	  </section>
+
+	  <section>
+	    <h3>1 = 5 minutes</h3>
+	    <p>exemple de période : 13h35 – 13h39</p>
+	  </section>
+
+	  <section>
+	    <h3>2 = 30 minutes</h3>
+	    <p>exemple de période : 13h30 – 13h59</p>
+	  </section>
+
+	  <section>
+	    <h3>3 = 1 heure</h3>
+	    <p>exemple de période : 13h00 – 13h59</p>
+	  </section>
+
+	  <section>
+	    <h3>4 = 1 jour</h3>
+	    <p>exemple de période : 12/06 à 00h00 – 12/06 à 23h59</p>
+	  </section>
+
+	  <section>
+	    <h3>5 = 1 semaine</h3>
+	    <p>exemple de période : 01/06 à 00h00 – 07/06 à 23h59</p>
+	  </section>
+
+	  <section>
+	    <h3>6 = 1 mois</h3>
+	    <p>exemple de période : 01/06 à 00h00 – 30/06 à 23h59</p>
+	  </section>
+
 	</section>
 	
 	<section>
