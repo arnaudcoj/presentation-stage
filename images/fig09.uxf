@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>606</x>
+      <y>534</y>
+      <w>384</w>
+      <h>222</h>
+    </coordinates>
+    <panel_attributes>*SafeActionBlock*
+--
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>294</y>
+      <w>72</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>HomeSummary
+ActionQueue
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>828</x>
+      <y>294</y>
+      <w>60</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>etc
+lt=.
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>294</y>
+      <w>60</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>30MinAction
+Queue
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>294</y>
+      <w>60</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>MinuteAction
+Queue
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>294</y>
+      <w>60</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>5MnAction
+Queue
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>606</x>
+      <y>414</y>
+      <w>174</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>*FileActionBlock*
+--
+
+
+
+halign=center
+Même comportement que ActionBlock
+
+
+
+--
+
+Déplacement du fichier dans finaly
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>804</x>
+      <y>426</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>2015-06-12-1337-monitoring.log
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>450</y>
+      <w>42</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;50.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>606</x>
+      <y>270</y>
+      <w>378</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>*ActionBlock*
+--
+
+
+
+
+
+
+
+
+
+--
+
+COMMIT
+halign=center
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>558</y>
+      <w>354</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>MinuteActionQueue
+bg=light_gray
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>606</y>
+      <w>354</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>5MinutesActionQueue
+bg=light_gray
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>654</y>
+      <w>354</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.
+etc.
+bg=light_gray
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>702</y>
+      <w>354</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>HomeSummaryActionQueue
+bg=light_gray
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>786</x>
+      <y>576</y>
+      <w>54</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+COMMIT</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>786</x>
+      <y>624</y>
+      <w>54</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+COMMIT</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>786</x>
+      <y>672</y>
+      <w>54</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+COMMIT</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>786</x>
+      <y>720</y>
+      <w>54</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+COMMIT</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>120</y>
+      <w>350</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>DOMAIN
+--
+
+DOMAIN_ID
+VERSION
+USER_ACCOUNT_ID
+OEM_ACCOUNT_ID
+DOMAIN_STATE
+DOMAIN_NAME
+DOMAIN_CONTACT_EMAIL
+DOMAIN_SPAM_LOW_MARKING_LOCK
+DOMAIN_SPAM_LOW_MARKING_OPERATION
+*...*</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

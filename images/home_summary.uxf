@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>130</y>
+      <w>170</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>HOME_SUMMARY
+--
+
+id
+COUNT
+OEM_ID
+USER_ID
+MESSAGE_TYPE
+STREAM
+COUNTDATE</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

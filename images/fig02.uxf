@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Database</type>
+    <coordinates>
+      <x>648</x>
+      <y>270</y>
+      <w>171</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>*VRC*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>270</y>
+      <w>171</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>*Parser*
+bg=pink
+fg=red
+layer=-1
+--
+halign=center
+"choco.la"
+
+- OemID
+- UserID
+- ...
+--
+"virus=3"
+
+"5=3"
+--
+"route=2"
+...
+--
+Agrégation des
+compteurs
+(5=3,12=2,...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>324</x>
+      <y>531</y>
+      <w>189</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>identifiants du domaine
+Compteurs agrégés
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>81</x>
+      <y>396</y>
+      <w>171</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>*HashMap*
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>495</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>495</y>
+      <w>189</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+insertion</panel_attributes>
+    <additional_attributes>190.0;20.0;60.0;30.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>81</x>
+      <y>423</y>
+      <w>72</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>&lt;String,
+
+"virus"
+
+
+--
+halign=center
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>153</x>
+      <y>423</y>
+      <w>99</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>DomainData&gt;
+
+5
+
+
+--
+halign=center
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>72</x>
+      <y>459</y>
+      <w>198</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>90</x>
+      <y>90</y>
+      <w>675</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>*2015-06-12-1337-monitoring.log*
+
+2015-06-12T13:37:02+02:00 mta06 : [00000000] [d:choco.la]:t=1427668260,virus=3,route=2
+...
+...
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Database</type>
+    <coordinates>
+      <x>648</x>
+      <y>468</y>
+      <w>171</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>STATISTICS_COUNTERS</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Database</type>
+    <coordinates>
+      <x>648</x>
+      <y>324</y>
+      <w>171</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>DOMAIN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>135</y>
+      <w>180</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+nom de domaine extrait</panel_attributes>
+    <additional_attributes>110.0;180.0;10.0;180.0;10.0;60.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>459</x>
+      <y>297</y>
+      <w>225</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+    requête</panel_attributes>
+    <additional_attributes>230.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>459</x>
+      <y>333</y>
+      <w>225</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+résultat</panel_attributes>
+    <additional_attributes>230.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>207</x>
+      <y>396</y>
+      <w>189</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+return 7</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>45</x>
+      <y>351</y>
+      <w>333</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+get("rcpto")</panel_attributes>
+    <additional_attributes>350.0;30.0;180.0;10.0;10.0;30.0;10.0;120.0;50.0;130.0</additional_attributes>
+  </element>
+</diagram>

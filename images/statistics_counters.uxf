@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>130</y>
+      <w>250</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>STATISTICS_COUNTERS
+--
+
+STATISTICS_ID        
+STATISTICS_DATE      
+STATISTICS_OWNER_TYPE
+STATISTICS_OEM_ID
+STATISTICS_OWNER_ID
+STATISTICS_USER_ID
+STATISTICS_COUNTERS  
+STATISTICS_DOMAIN_ID
+STATISTICS_COMPRESSION_TYPE
+STATISTICS_STREAM_TYPE
+STATISTICS_COMPRESSED</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
